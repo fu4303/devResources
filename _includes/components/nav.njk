@@ -4,13 +4,13 @@
 
   {% if entry.url == page.url or entry.title == eleventyNavigation.parent or entry.title == eleventyComputed.key%}
     {% if rel == "child" %}
-      {% set highlight = 'border-gray-600 font-semibold text-indigo-500 focus:border-gray-700' %}
+      {% set highlight = 'border-indigo-600 font-semibold text-indigo-500 focus:border-indigo-700' %}
     {% else %}
-      {% set highlight = 'border-gray-600 font-semibold focus:border-gray-700' %}
+      {% set highlight = 'border-indigo-600 font-semibold focus:border-indigo-700' %}
     {% endif %}
     {% set current = 'aria-current="page"' %}
   {% else %}
-    {% set highlight = 'border-transparent text-indigo-500 hover:text-gray-700 hover:border-gray-500 ' %}
+    {% set highlight = 'border-transparent text-indigo-500 hover:text-indigo-700 hover:border-indigo-500 ' %}
     {% set current = '' %}
   {% endif %}
  
@@ -20,14 +20,14 @@
     rounded  
     px-4 py-2 
     block
-    focus:text-gray-900 
+    focus:text-indigo-900 
     text-sm bg-transparent 
     dark:bg-transparent
-    dark:hover:text-gray-400 
+    dark:hover:text-indigo-400 
     md:mt-0 
     m-0
     hover:font-bold
-    focus:text-gray-900   
+    focus:text-indigo-900   
     focus:outline-none focus:ring {{ highlight }} 
     text-indigo-500 
     dark:text-indigo-500" 
@@ -41,13 +41,13 @@
     bg-transparent 
     rounded-lg 
     dark:bg-transparent 
-    dark:focus:bg-gray-600 
+    dark:focus:bg-indigo-600 
     dark:focus:text-white 
-    dark:hover:text-gray-500 
+    dark:hover:text-indigo-500 
     dark:text-indigo-400 
     md:mt-0 
-    hover:text-gray-900 
-    focus:text-gray-900 
+    hover:text-indigo-900 
+    focus:text-indigo-900 
     focus:outline-none 
     focus:ring {{ highlight }} 
     text-indigo-500" 
@@ -60,7 +60,7 @@
     
     <div @click.away="open = false" class="relative" x-data="{ open: false }">
         <button  @click="open = !open" 
-        class="whitespace-nowrap flex flex-row items-center w-full lg:mr-2 px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-gray-400 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 hover:font-semibold focus:text-gray-900   focus:outline-none focus:ring {{ highlight }}">
+        class="whitespace-nowrap flex flex-row items-center w-full lg:mr-2 px-4 py-2 mt-2 text-sm text-left bg-transparent rounded-lg dark:bg-transparent dark:focus:text-white dark:hover:text-indigo-400 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-indigo-900 hover:font-semibold focus:text-indigo-900   focus:outline-none focus:ring {{ highlight }}">
           <span>{{ entry.title }}</span>
           <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
         </button>
