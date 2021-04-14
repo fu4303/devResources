@@ -84,10 +84,10 @@
    @apply ml-6 text-indigo-500;
   }
   nav ul li a {
-    @apply mb-1 pt-2 pr-4 pb-1 pl-2 w-full block text-gray-500 dark:text-gray-500;
+    @apply mb-1 pt-2 pr-4 pb-1 pl-2 w-full block text-indigo-500 dark:text-indigo-500;
   }
   nav ul li a:hover {
-    @apply text-gray-900 dark:text-gray-400;
+    @apply text-indigo-900 dark:text-indigo-400;
   }
   nav ul li a.active {
     @apply font-semibold;
@@ -99,13 +99,13 @@
     @apply pt-2 ml-4
   }
   nav.toc ol li a {
-    @apply text-gray-500
+    @apply text-indigo-500
   }
   nav.toc ol li a:hover {
-    @apply text-gray-900
+    @apply text-indigo-900
   }
   .prose .footer-nav a:hover {
-    @apply dark:text-gray-400 !important
+    @apply dark:text-indigo-400 !important
   }
 
 /* Utilities and misc */
@@ -125,6 +125,6 @@
     width: "24px";
   }
   input {
-   @apply dark:text-gray-400
+   @apply dark:text-indigo-400
   }
 }
