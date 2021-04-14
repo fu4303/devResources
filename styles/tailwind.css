@@ -78,10 +78,10 @@
 
   /* Overrides for nav/Table of Contents block */
   nav ul {
-    @apply ml-0 text-gray-500;
+    @apply ml-0 text-indigo-500;
    }
   nav ul ul {
-   @apply ml-6 text-gray-500;
+   @apply ml-6 text-indigo-500;
   }
   nav ul li a {
     @apply mb-1 pt-2 pr-4 pb-1 pl-2 w-full block text-gray-500 dark:text-gray-500;
