@@ -25,20 +25,20 @@ section: page
              <div class="main  flex flex-col pr-0 prose sm:prose lg:prose-lg xl:prose-md">
             {% endif %}    
                 <article>
-                <h1 class="dark:text-gray-500">{{ title }}</h1>
+                <h1 class="dark:text-indigo-500">{{ title }}</h1>
                 {% if site.navigationStyle == "horizontal" %}
                     {% if site.enableEditButton == true or site.enableDatestamp == true %}
                         <div class="flex mt-4 justify-end mr-1">
                         {% if site.enableDatestamp == true %}
-                            <div class="inline-block w-auto text-xs text-gray-500 pt-1 pb-1 pl-3 mr-2 rounded ">Updated <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time></div>
+                            <div class="inline-block w-auto text-xs text-indigo-500 pt-1 pb-1 pl-3 mr-2 rounded ">Updated <time datetime="{{ page.date | machineDate }}">{{ page.date | readableDate }}</time></div>
                         {% endif %}
                         {% if site.enableEditButton == true %}
-                            <div class="inline-block w-auto text-xs  text-gray-500 hover:bg-gray-200 pt-1 pr-4 pb-1 pl-3 rounded "><a class="text-gray-500 no-underline font-normal !important" target="_blank" href="{{ site.githubUrl }}/edit/{{ site.githubBranch }}/{{ page.inputPath }}">Edit</a></div>
+                            <div class="inline-block w-auto text-xs  text-indigo-500 hover:bg-gray-200 pt-1 pr-4 pb-1 pl-3 rounded "><a class="text-indigo-500 no-underline font-normal !important" target="_blank" href="{{ site.githubUrl }}/edit/{{ site.githubBranch }}/{{ page.inputPath }}">Edit</a></div>
                         {% endif %}
                         </div>
                     {% endif %}
                 {% endif %}
-                <div class="self-center adjust  dark:text-gray-400">
+                <div class="self-center adjust  dark:text-indigo-400">
                     {{ layoutContent | safe }}
                     {% if (site.enableComments) and (comments !== 0) %}
                         <!-- Paste your comment code here! -->
