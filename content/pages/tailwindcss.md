@@ -18,6 +18,9 @@ eleventyNavigation:
 [Tailwind Components](https://tailwindcomponents.com)
 - ⚡️ This is a free repository for community components using Tailwind CSS. There are various components like 404 pages, Notification dropdown, eCommerce product list page, and so many other components.
 
+[Headless UI](https://headlessui.dev)
+- ⚡️ Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS.
+
 [Tailwind Typography](https://tailwind-typography-playground.vercel.app)
 - ⚡️ This is an amazing website that you can check how your typography will look like before you actually code it. You can select the font family of your titles and text body to see if they match to your liking.
 
