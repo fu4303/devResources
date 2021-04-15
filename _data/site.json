@@ -1,10 +1,10 @@
 {
-  "name": "devResources-pro",
+  "name": "devResources",
   "subtitle": "A collection of developer resources.",
   "description": "A curated collection of developer resources to use while working on all kinds of projects.",
   "footer": "Made with ❤ in My World",
   "url": "https://devResources-pro.vercel.app",
-  "githubUrl": "https://github.com/fu4303/devResources-pro",
+  "githubUrl": "https://github.com/fu4303/devResources",
   "githubBranch": "main",
   "navigationStyle": "vertical",
   "emoji": "💥",
